@@ -1,0 +1,20 @@
+.mainHeading {
+    font-family: var(--primary-font);
+    font-size: 3.5rem;
+    color: var(--dark-gold);
+    text-align: center;
+    margin: 2rem auto 7rem;
+}
+
+@media only screen and (max-width: 590px){
+    .mainHeading {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .mainHeading {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+}

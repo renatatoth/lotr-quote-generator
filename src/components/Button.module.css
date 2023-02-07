@@ -1,0 +1,26 @@
+.button {
+    height: 4.5rem;
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 3.5rem;
+    background-color: var(--dark-gold);
+    color: #fff;
+    border: 2px solid var(--dark-gold);
+    cursor: pointer;
+    transition: .3s all ease-in;
+}
+
+@media only screen and (max-width: 320px){
+    .button {
+        margin-top: 2rem;
+        height: 3.75rem;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+}
+
+.button:hover {
+    background-color: var(--gold);
+}

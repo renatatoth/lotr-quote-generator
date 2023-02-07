@@ -1,0 +1,33 @@
+.footer {
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--green);
+    position: sticky;
+    top: 100vh;
+}
+
+@media only screen and (max-width: 590px){
+    .footer {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s all ease-in;
+}
+
+.footer a:hover {
+    color: var(--gold);
+}

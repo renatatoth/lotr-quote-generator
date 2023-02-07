@@ -1,0 +1,107 @@
+.container {
+    width: 32rem;
+}
+
+@media only screen and (max-width: 590px){
+    .container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .container {
+        margin-bottom: 0;
+    }
+}
+
+.selectBtn {
+    height: 4.5rem;
+    width: inherit;
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 1.5rem;
+    background-color: var(--green);
+    color: #fff;
+    border: 2px solid var(--dark-gold);
+    cursor: pointer;
+    transition: .3s all ease-in;
+}
+
+@media only screen and (max-width: 320px){
+    .selectBtn {
+        height: 3.75rem;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 10px;
+    margin-left: 1rem;
+    position: relative;
+    top: -2px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.optionsList {
+    display: none;
+    opacity: 0;
+    list-style: none;
+    background-color: var(--green);
+    text-align: center;
+}
+
+.optionsList li:not(:last-child) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.option {
+    width: 100%;
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: inherit;
+    border: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .3s all ease-in;
+    outline: none;
+}
+
+@media only screen and (max-width: 320px){
+    .option {
+        font-size: 1.2rem;
+    }
+}
+
+.option:hover {
+    background-color: var(--gold);
+}
+
+.show {
+    opacity: 1;
+    display: block;
+}
+
+.error {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    color: #f00;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 320px){
+    .error {
+        font-size: 1.1rem;
+    }
+}
